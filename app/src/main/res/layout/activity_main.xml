@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/UploadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Upload Image"
+        />
+
+    <ImageView
+        android:id="@+id/ImagePreview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/UploadButton"/>
+
+
+    <EditText
+        android:id="@+id/NameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:layout_below="@id/ImagePreview"/>
+
+    <EditText
+        android:id="@+id/EmailAddressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:layout_below="@+id/NameText"
+        android:inputType="textEmailAddress"
+        android:hint="Email"/>
+
+    <EditText
+        android:id="@+id/PasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:layout_below="@+id/EmailAddressText"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+
+    <EditText
+        android:id="@+id/PasswordConfirmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:layout_below="@id/PasswordText"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"/>
+
+    <RadioGroup
+        android:id="@+id/Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PasswordConfirmText"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Male"
+            android:text="Male"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Female"
+            android:text="Female"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Gender"
+        android:text="Register"/>
+
+</RelativeLayout>
